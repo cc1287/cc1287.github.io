@@ -1,1 +1,13 @@
-<p>test</p>
+<html>
+  <head>
+    <title>config</title>
+  </head>
+  <body>
+    <script>
+      const url = new URL(window.location.href);
+      const params = new URLSearchParams(url.search);
+      const param1 = params.get('get'); 
+      console.log(param1);
+    </script>
+  </body>
+</html>
