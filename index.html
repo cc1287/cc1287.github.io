@@ -3,11 +3,13 @@
     <title>config</title>
   </head>
   <body>
+    <p id="show"></p>
     <script>
       const url = new URL(window.location.href);
       const params = new URLSearchParams(url.search);
       const param1 = params.get('get'); 
       console.log(param1);
+      document.getElementById('show').textContent = param1;
     </script>
   </body>
 </html>
